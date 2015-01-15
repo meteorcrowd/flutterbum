@@ -1,3 +1,45 @@
 <template name="archives">
-    Archives
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h1>Archive <small>List</small></h1>
+        </div>
+        <div class="panel-body">
+            <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                    <th>
+                        Type
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Content
+                    </th>
+                    <th>
+                        Un-archive
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Conversation
+                        </td>
+                        <td>
+                            Date added
+                        </td>
+                        <td>
+                            Note
+                        </td>
+                        <td>
+                            <button name="button" class="btn btn-default btn-xs unarchiveConversation">
+                                <i class="fa fa-minus-square-o"></i> Un-archive
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
 </template>
