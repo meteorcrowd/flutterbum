@@ -1,4 +1,4 @@
-Chats = new Mongo.Collection("projects");
+Chats = new Mongo.Collection("chats");
 
 Chats.allow({
     insert: function () {

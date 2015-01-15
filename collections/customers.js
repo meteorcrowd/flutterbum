@@ -1,4 +1,4 @@
-Customers= new Mongo.Collection("projects");
+Customers= new Mongo.Collection("customers");
 
 Customers.allow({
     insert: function () {

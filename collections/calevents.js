@@ -1,4 +1,4 @@
-Calevents = new Mongo.Collection("projects");
+Calevents = new Mongo.Collection("calevents");
 
 Calevents.allow({
     insert: function () {

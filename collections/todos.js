@@ -1,4 +1,4 @@
-Todos = new Mongo.Collection("projects");
+Todos = new Mongo.Collection("todos");
 
 Todos.allow({
     insert: function () {
