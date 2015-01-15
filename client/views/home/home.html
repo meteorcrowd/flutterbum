@@ -1,0 +1,31 @@
+<template name="home">
+    <div class="home">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>{{ siteTitle }}</h1>
+                <p class="lead">Project management for the real world.</p>
+                <p><a href="{{ pathFor 'dashboard' }}" class="btn btn-lg btn-success">My Projects</a></p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2><i class="fa fa-users"></i> Team Building</h2>
+                    <p>
+                        Invite your project team to collaborate with you!
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h2><i class="fa fa-twitch"></i> Store Conversations</h2>
+                    <p>
+                        Any comments or remarks will be stored with the project.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h2><i class="fa fa-inbox"></i> Store task lists</h2>
+                    <p>
+                        Shared lists let everyone know what has been done.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
