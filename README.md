@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # meteor-boilerplate
 
 A starting point for MeteorJS applications. Includes iron-router, Bootstrap 3, Font Awesome, LESS and more.
@@ -172,3 +173,7 @@ Meteor.startup(function() {
 });
 
 ```
+=======
+# project-management
+Project management demonstration based on Flutterbum.
+>>>>>>> 92ae1151cbd370613ee114a227c8fcca18dbcfec
