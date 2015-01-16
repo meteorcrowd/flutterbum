@@ -32,13 +32,15 @@
                     <span class="pull-right">
                         <i class="fa fa-trash deleteConfirmation"></i>
                     </span>
-                    <a href="/projects/{{_id}}">Project Name</a>
-                    <p>Entered on Date</p>
+                    <a href="/projects/{{_id}}">{{ name }}</a>
+                    <p class="text-info">Entered on {{ formatDate dateEntered }}</p>
                 </h2>
             </div>
             <div class="panel-body">
-                <p>Due for <a href="/customers/{{ custname }}">Customer Name</a></p>
-                <p>Date: date...</p>
+                {{# if customer }}
+                <p class="bg-info">Due for <a href="/customers/{{ custname }}">{{ customer }}</a></p>
+                {{/ if }}
+                <p class="bg-alert">Due Date: {{ formatDate dateDue }}</p>
             </div>
         </div>
     </div>
