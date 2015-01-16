@@ -21,10 +21,10 @@ Router.map(function() {
         path: '/dashboard',
         loginRequired: 'entrySignIn',
         waitOn: function() {
-            return this.subscribe("items");
+            return Meteor.subscribe("projects");
         },
         data: {
-            items: Items.find({})
+            projects: Projects.find({})
         },
         onAfterAction: function() {
             SEO.set({
