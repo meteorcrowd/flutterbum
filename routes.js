@@ -40,6 +40,28 @@ Router.map(function() {
         }
     });
 
+    this.route('projectView', {
+        path: '/projects/:_id',
+        layoutTemplate: 'mainLayout',
+        loginRequired: 'entrySignIn',
+        waitOn: function () {
+            Meteor.subscribe('customers');
+            Meteor.subscribe('conversations', this.params._id);
+            Meteor.subscribe('todos', this.params._id);
+            Meteor.subscribe('calevents', this.params._id);
+            Meteor.subscribe('uploads', this.params._id);
+            return Meteor.subscribe('projects');
+        },
+        data: function () {
+            return Projects.findOne(this.params._id);
+        },
+        onAfterAction: function () {
+            SEO.set({
+                title: 'Project View | ' + SEO.settings.title
+            })
+        }
+    });
+
     this.route('notFound', {
         path: '*',
         where: 'server',
