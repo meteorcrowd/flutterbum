@@ -4,11 +4,30 @@
             <h3 class="panel-title">Conversations</h3>
         </div>
         <div class="panel-body">
-
+            <div class="col-md-12">
+                <p>
+                    <button class="btn btn-success btn-sm addConversation">Start a conversation.</button>
+                </p>
+                <table>
+                    {{> conversation }}
+                </table>
+            </div>
         </div>
-        <div class="panel-footer">
 
-        </div>
     </div>
 
+</template>
+
+<template name="conversation">
+    <tr>
+        <td class="col-md-1"><i class="fa fa-folder"></i></td>
+        <td class="col-md-3">Email</td>
+        <td class="col-md-5"><a href="#" class="shorten">Note</a></td>
+        <td class="col-md-2">Date Added</td>
+        <td class="col-md-1">
+            <button type="button" class="btn btn-default">
+                <i class="fa fa-minus-square-o"></i> Archive
+            </button>
+        </td>
+    </tr>
 </template>
