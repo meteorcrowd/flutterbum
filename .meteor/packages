@@ -26,3 +26,5 @@ dburles:factory
 anti:fake
 cunneen:mailgun
 mrt:fullcalendar
+cfs:standard-packages
+cfs:filesystem
